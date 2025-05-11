@@ -1,0 +1,147 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1C1C1C;
+    margin: 0;
+}
+.services-section .service-header p {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 400;
+}
+.subtitle {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.services-section{
+    padding: 3rem;
+    height: fit-content;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-section h2{
+    text-align: center;
+    color:#FFD700;
+    text-transform: uppercase;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+.service {
+    background-color: #333;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ffd700;
+}
+.service i {
+    font-size: 32px;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+.service h3 {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/service-background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    border-radius: 4px;
+    z-index: -1;
+  }
+
+
+  
+  
+.modal-content {
+    position: absolute;
+    color: white;
+    border-radius: 4px; 
+    max-width: 80vw;
+    height: fit-content;
+    max-height: 90vh;
+    text-align: left;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
+}
+
+.modal-scrollable{
+    max-height: 50vh;
+    overflow:auto;
+    scrollbar-color: #FFD700 lightblue;
+}
+
+.modal-content #modal-text{
+    padding: 0 2rem;
+}
+.modal-content span,h2{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+
+.close {
+    color: #FFD700;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 20px;
+    z-index: 1;
+}
+.close:hover {
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    .modal-content{
+        width: 80%;
+    }
+    .modal-bg{
+        background-image: url('../assets/service-bg-mobile.jpg');
+    }
+}

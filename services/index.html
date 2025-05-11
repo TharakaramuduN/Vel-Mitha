@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vel&Mitha</title>
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/services/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <div style="width: 30%; height:50px">
+                <img src="/assets/1c5fbd27-8cbb-4342-8062-c4dd59f3ca81-removebg-preview1.png" alt="" height="100%">
+            </div>
+            <div class="logo-wordmark">
+                Vel&nbsp;<span class="and">&</span>&nbsp;Mitha
+            </div>              
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about";>About us</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    <main>
+        <section class="services-section">
+            <div class="service-header">
+                <p>Our Services</p>
+            </div>
+            <div class="services-container">
+                <div class="service" onclick="openModal('bookkeeping')">
+                    <i class="fas fa-book"></i>
+                    <h3>Book Keeping & Accounting</h3>
+                </div>
+                <div class="service" onclick="openModal('tax')">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Tax Planning & Compliance</h3>
+                </div>
+                <div class="service" onclick="openModal('financial')">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Financial Advisory & Planning</h3>
+                </div>
+                <div class="service" onclick="openModal('audit')">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Audit & Assurance Services</h3>
+                </div>
+                <div class="service" onclick="openModal('consulting')">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business Consulting & Strategy</h3>
+                </div>
+                <div class="service" onclick="openModal('secretarial')">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Secretarial Services</h3>
+                </div>
+                <div class="service" onclick="openModal('payroll')">
+                    <i class="fas fa-coins"></i>
+                    <h3>Payroll Management</h3>
+                </div>
+                <div class="service" onclick="openModal('startup')">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Startup & SME Consulting</h3>
+                </div>
+            </div>
+            
+            <div id="modal" class="modal">
+                <div class="modal-content" id="modal-content">
+                    <div class="modal-bg"></div>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <div class="modal-scrollable">
+                        <ul id="modal-text"></ul>
+                    </div>
+                </div>
+            </div>  
+        </section>  
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <div style="width: 30%; height:50px">
+                        <img src="/assets/1c5fbd27-8cbb-4342-8062-c4dd59f3ca81-removebg-preview1.png" alt="" height="100%">
+                    </div>
+                    <div class="logo-wordmark">
+                        Vel&nbsp;<span class="and">&</span>&nbsp;Mitha
+                    </div>              
+                </div>
+                <p>Global Leaders in Financial Excellence <br> We provide expert financial,tax and consulting solutions to businesses worldwide.</p>
+
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <span><a href="mailto:info@velmitha.com"><i class="fas fa-envelope"></i>info@velmitha.com</a></span>
+                <span><a href="tel:+918248460166"><i class="fas fa-phone"></i>+91 8248460166</a></span>
+                <span><a href="tel:+918248678870"><i class="fas fa-phone"></i>+91 8248678870</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Business Towers, Chennai, India</span>
+            </div>
+            <div class="footer-section socials">
+                <h2>Follow Us</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vel-mitha-2a9191360/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/vel_and_mitha?igsh=MTRsdW4yNHp3OGt2cA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vel&Mitha. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/common.js"></script>
+    <script src="/services/services.js"></script>
+</body>
+</html>

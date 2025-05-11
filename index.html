@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vel&Mitha</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/common.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><div style="color: white;">Vel & <span style="color: #ffd700;">Mitha</span> </div></div>
+        <div class="logo">
+            <div style="width: 30%; height:50px">
+                <img src="/assets/1c5fbd27-8cbb-4342-8062-c4dd59f3ca81-removebg-preview1.png" alt="" height="100%">
+            </div>
+            <div class="logo-wordmark">
+                Vel&nbsp;<span class="and">&</span>&nbsp;Mitha
+            </div>              
+        </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#" style="color: #ffd700";>About us</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about";>About us</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
         </ul>
         <div class="hamburger">
             <div class="bar"></div>
@@ -24,117 +31,162 @@
         </div>
     </nav>
     <section id="hero">
-        <div id="title">
+        <div class="tagline">
+            <div id="title">
+                Together we grow
+            </div>
         </div>
     </section>
     <section id="services">
         <div class="card-container">
             <div class="card">
-                <h2>Global Taxes</h2>
-                <p>International tax services for global investors and corporations.</p>
+                <a href="/services">
+                    <strong>Accounting <br> & Bookkeeping</strong>
+                    <p>Accurate bookkeeping, tax planning, and compliance to streamline your finances and drive
+                        growth. Precision. Compliance. Success.</p>
+                </a>
             </div>
             <div class="card">
-                <h2>Global Taxes</h2>
-                <p>International tax services for global investors and corporations.</p>
+                <a href="/services">
+                    <strong>Tax Planning <br> & Compliance</strong>
+                    <p>Seamless tax planning, filing, and regulatory compliance to keep your business risk-free and
+                        optimized. Accuracy. Compliance. Peace of Mind.</p>
+                </a>
             </div>
             <div class="card">
-                <h2>Global Taxes</h2>
-                <p>International tax services for global investors and corporations.</p>
+                <a href="/services">
+                    <strong>Financial Advisory <br> & Planning</strong>
+                    <p>Strategic insights, wealth management, and risk assessment to secure your financial future.
+                        Growth. Stability. Success.
+                    </p>
+                </a>
             </div>
             <div class="card">
-                <h2>Global Taxes</h2>
-                <p>International tax services for global investors and corporations.</p>
+                <a href="/services">
+                    <strong>Audit <br> & Assurance Services</strong>
+                    <p>Reliable audits, risk assessment, and compliance to strengthen financial integrity. Accuracy.
+                        Transparency. Trust.</p>
+                </a>
             </div>
             <div class="card">
-                <h2>Global Taxes</h2>
-                <p>International tax services for global investors and corporations.</p>
+                <a href="/services">
+                    <strong>Business Consulting <br> & Strategy</strong>
+                    <p>Tailored solutions, market analysis, and strategic planning to drive business growth. Insight.
+                        Innovation. Success.
+                    </p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/services">
+                    <strong>Secretarial <br> Services</strong>
+                    <p>Tailored solutions, regulatory compliance, and corporate governance to streamline operations.
+                        Efficiency. Compliance. Success.
+                    </p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/services">
+                    <strong>Payroll <br> Management</strong>
+                    <p>Seamless processing, compliance, and efficient payroll management for smooth operations.
+                        Accuracy. Efficiency. Success.</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/services">
+                    <strong>Startup <br> & SME Consulting</strong>
+                    <p>Strategic guidance, compliance, and growth-focused solutions for emerging businesses.
+                        Innovation. Efficiency. Success.</p>
+                </a>
             </div>
         </div>
     </section>
-<section class="reviews-section">
-    <div class="reviews-poster">
-        <h1>"</h1>
-        <h2>Don't just take our word for it</h2>
-        <p>Witness it first hand directly from our lovely customers</p>
-    </div>
-    <div class="carousel-container">
-        <button class="carousel-control prev">&#10094;</button>
-        <div class="customer-review-carousel">
-            <div class="carousel-wrapper">
-                <div class="carousel-item">
-                    <p class="review-text">"From the initial consultation to the final delivery, the entire process was smooth and stress-free. The team kept me informed at every stage and was always available to answer my questions. The end result was exactly what I was looking for."</p>
-                    <div>
-                        <h4 class="customer-name">Emily Rodriguez</h4>
-                        <p class="customer-title">Small Business Owner</p>
+    <section class="reviews-section">
+        <div class="reviews-poster">
+            <h1>"</h1>
+            <h2>Don't just take our word for it</h2>
+            <p>Witness it first hand directly from our lovely customers</p>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-control prev">&#10094;</button>
+            <div class="customer-review-carousel">
+                <div class="carousel-wrapper">
+                    <div class="carousel-item">
+                    </div>
+                    <!-- Additional carousel items will be added by JavaScript -->
+                </div>
+                <div class="carousel-indicators">
+                    <!-- Indicators will be added by JavaScript -->
+                </div>
+            </div>
+            <button class="carousel-control next">&#10095;</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <div class="logo">
+                    <div style="width: 30%; height:50px">
+                        <img src="/assets/1c5fbd27-8cbb-4342-8062-c4dd59f3ca81-removebg-preview1.png" alt="" height="100%">
+                    </div>
+                    <div class="logo-wordmark">
+                        Vel&nbsp;<span class="and">&</span>&nbsp;Mitha
+                    </div>              
+                </div>
+                <p>Global Leaders in Financial Excellence <br> We provide expert financial,tax and consulting solutions to businesses worldwide.</p>
+
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <span><a href="mailto:info@velmitha.com"><i class="fas fa-envelope"></i>info@velmitha.com</a></span>
+                <span><a href="tel:+918248460166"><i class="fas fa-phone"></i>+91 8248460166</a></span>
+                <span><a href="tel:+918248678870"><i class="fas fa-phone"></i>+91 8248678870</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Business Towers, Chennai, India</span>
+            </div>
+            <div class="footer-section socials">
+                <h2>Follow Us</h2>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vel-mitha-2a9191360/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/vel_and_mitha?igsh=MTRsdW4yNHp3OGt2cA=="><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vel&Mitha. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Disclaimer</a>
+            </div>
+        </div>
+        <!-- WhatsApp Floating Button -->
+        <div class="whatsapp-float" target="_blank" onclick="openModal()">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+        </div>
+        <div id="whatsappModal" class="whatsapp-modal">
+            <div class="modal-content">
+                <div>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-header">Contact Us on WhatsApp</div>
+                    <div class="modal-body">
+                        <a href="https://wa.me/+918248460166" target="_blank">Shakthivel </a>
+                        <a href="https://wa.me/+918248678870" target="_blank">Sarumitha</a>
                     </div>
                 </div>
-                <!-- Additional carousel items will be added by JavaScript -->
-            </div>
-            <div class="carousel-indicators">
-                <!-- Indicators will be added by JavaScript -->
             </div>
         </div>
-        <button class="carousel-control next">&#10095;</button>
-    </div>
-</section>
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-section about">
-            <!-- <div class="logo footer-logo"><div style="color: white;">Vel & </div><div>Mitha</div></div> -->
-            <p>Professional accounting, tax, and consulting services for businesses and individuals worldwide. Excellence in financial solutions since 2010.</p>
-            <div class="contact">
-                <span><i class="fas fa-map-marker-alt"></i> 123 Finance Street, Business District</span>
-                <span><i class="fas fa-phone"></i> +1 (555) 123-4567</span>
-                <span><i class="fas fa-envelope"></i> info@velmitha.com</span>
-            </div>
-            <div class="socials">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="footer-section links">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-section services-links">
-            <h2>Our Services</h2>
-            <ul>
-                <li><a href="#">Taxation</a></li>
-                <li><a href="#">Audit</a></li>
-                <li><a href="#">Outsourcing</a></li>
-                <li><a href="#">Regulatory Compliance</a></li>
-                <li><a href="#">Business Advisory</a></li>
-            </ul>
-        </div>
-        <div class="footer-section newsletter">
-            <h2>Subscribe Newsletter</h2>
-            <p>Stay updated with our latest news and insights</p>
-            <form action="#" method="post">
-                <input type="email" name="email" placeholder="Enter your email">
-                <button type="submit" class="btn-subscribe">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 Vel&Mitha. All rights reserved.</p>
-        <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Disclaimer</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="script.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="/common.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

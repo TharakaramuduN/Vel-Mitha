@@ -1,11 +1,3 @@
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
-});
-
 // Get carousel elements
 const carouselContainer = document.querySelector('.customer-review-carousel');
 const carouselItem = document.querySelector('.carousel-item');
@@ -15,25 +7,20 @@ const nextButton = document.querySelector('.carousel-control.next');
 // Create additional carousel items (duplicating the existing one)
 const reviewsData = [
   {
-    text: "From the initial consultation to the final delivery, the entire process was smooth and stress-free. The team kept me informed at every stage and was always available to answer my questions. The end result was exactly what I was looking for.",
-    name: "Emily Rodriguez",
-    title: "Small Business Owner"
+    text: "Your proactive follow-ups and reminders have been invaluable in ensuring that all deadlines are met.The convenience of managing everything remotely, with minimal communication, has been remarkable. The cost-effectiveness of your services has provided excellent value, making quality financial assistance.Reflecting on our successful three-year collaboration, I am enthusiastic about our future cooperation and the continued success it promises",
+    name: "Damo",
+    title: "Software Development Engineer, Sumologic"
   },
   {
-    text: "The expertise and attention to detail provided by Vel&Mitha made all the difference for our company's financial planning. Their team was professional, knowledgeable, and truly committed to our success.",
-    name: "Michael Chen",
-    title: "CFO, Tech Innovations Inc."
+    text: "I wanted to take a moment to express my heartfelt appreciation for the exceptional service provided by Vel & Mitha, during our recent tax filing engagement.Your professionalism, expertise, and dedication to delivering high-quality results were truly impressive. Your ability to explain complex financial concepts in a clear and concise manner made it easy for me to understand and make informed decisions.I would not hesitate to recommend your services to anyone seeking a reliable and knowledgeable chartered accountant.Once again, thank you for your outstanding service and support",
+    name: "Saranraj",
+    title: "Senior Data engineer , Hcl Tech Australia"
   },
   {
-    text: "I've worked with several accounting firms in the past, but none have matched the level of service I've received from Vel&Mitha. Their proactive approach and clear communication have saved us both time and money.",
-    name: "Sarah Johnson",
-    title: "Director of Operations"
+    text: "Vel & Mitha has been handling our GST filings seamlessly, ensuring compliance and timely submissions. Their expertise and professionalism have made tax management hassle-free for CAR Wash. I highly recommend their services to any business looking for reliable tax and accounting support.",
+    name: "Ashok",
+    title: "Owner of car detailing studio"
   },
-  {
-    text: "Their global tax expertise was invaluable for our expansion into international markets. They navigated complex regulations with ease and provided strategic guidance that helped us avoid costly mistakes.",
-    name: "David Thompson",
-    title: "CEO, Global Ventures Ltd."
-  }
 ];
 
 // Clear the container and create carousel wrapper
@@ -46,9 +33,12 @@ reviewsData.forEach(review => {
   newItem.className = 'carousel-item';
   newItem.innerHTML = `
     <p class="review-text">"${review.text}"</p>
-    <div>
-      <h4 class="customer-name">${review.name}</h4>
-      <p class="customer-title">${review.title}</p>
+    <div style="display:flex">
+      <img class="customer-image" src="assets/review-images/${review.name}.jpg" alt="${review.name}">
+      <div>
+          <h4 class="customer-name">${review.name}</h4>
+          <p class="customer-title">${review.title}</p>
+      </div>
     </div>
   `;
   carouselWrapper.appendChild(newItem);
@@ -137,3 +127,17 @@ carouselContainerParent.addEventListener('mouseenter', () => {
 carouselContainerParent.addEventListener('mouseleave', () => {
   startAutoSlide();
 });
+
+function openModal() {
+  document.getElementById("whatsappModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("whatsappModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target === document.getElementById("whatsappModal")) {
+      closeModal();
+  }
+}
