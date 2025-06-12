@@ -1,9 +1,3 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #eae5de;
-    margin: 0;
-}
-
 body #hero {
     display: flex;
     height: 70vh;
@@ -19,7 +13,7 @@ body #hero::before{
     left: 0;
     width: 100%;
     height: 90vh;
-    background-image: url('assets/hero-img.jpg');
+    background-image: url('assets/home-page.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -34,7 +28,6 @@ body #hero .tagline {
     top: 40%;
     left: 10%;
     font-size: 5vw;
-    max-width: 80%;
     text-align: center;
     word-break: break-word;
     font-family: 'Playfair Display', serif;
@@ -350,7 +343,6 @@ body #hero .tagline {
         font-size: 8vw;
         top: 35%;
         left: 5%;
-        width: 90%;
     }
 }
 
@@ -404,7 +396,6 @@ body #hero .tagline {
     body #hero #title{
         font-size: 6vw;
         left: 5%;
-        width: 90%;
     }
 
     body #hero::before{

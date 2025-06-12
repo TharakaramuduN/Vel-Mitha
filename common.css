@@ -7,10 +7,17 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eae5de;
+    margin: 0;
+}
+
+
 .placeholder {
-    height: 70px; /* Approx height of the header/footer */
-    background-color: #fafafa; /* Match your header/footer bg */
-    opacity: 0; /* Hide the empty space initially */
+    height: 70px; 
+    background-color: #fafafa; 
+    opacity: 0; 
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -26,27 +33,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 10%;
+    padding: 2% 6%;
     position: sticky;
     z-index: 10000;
     color: black;
-    height: 70px;
+    height: 60px;
 }
 
 .logo {
     height: 50px;
-    width: 220px;
+    width: 170px;
     display: flex;
     flex-direction: row;
     padding: 1rem;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.2rem;
+}
+
+.logo-img{
+    width: 40%;
+    height:40px;
 }
 
 .logo-wordmark {
     font-family: 'Cinzel', serif;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     background: linear-gradient(90deg, #f6c26c, #e39a3f);
     -webkit-background-clip: text;
@@ -268,11 +280,8 @@
 
 @media screen and (max-width: 768px) {
 
-    .logo {
-        height: 40px;
-    }
     .logo-wordmark{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .socials .social-links{

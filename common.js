@@ -38,10 +38,8 @@ function highlightActiveLink() {
     const currentPage = window.location.pathname.split("/")[1];
     const links = document.querySelectorAll(".nav-links a");
     links.forEach(link => {
-        console.log(link.getAttribute("href").split('/')[1],currentPage)
         if (link.getAttribute("href").split('/')[1] === currentPage) {
             link.classList.add("active");
-            console.log('it activated')
         }
     });
 }

@@ -4,50 +4,68 @@ body {
     margin: 0;
 }
 
-
-.about-us-content{
-    padding: 3rem;
-    min-height: 90vh;
+.about-us-content {
+    position: relative;
+    height: 85vh;
+    overflow: hidden;
 }
 
-.about-us-content p{
-    text-align: justify;
+.about-us-content::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("/assets/about-us-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.about-us-content .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about-us-blur-box {
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 2rem;
     color: white;
-    line-height: 1.5rem;
-    
+    max-width: 1100px;
+    width: 100%;
 }
 
-.about-us-content h2{
+.about-us-blur-box h2 {
     text-align: center;
-    margin-bottom: 2rem;
-    color: white;
+    margin-bottom: 1rem;
     font-size: 2.5rem;
     font-weight: 400;
 }
 
-.about-us-content .container{
-    display: flex;
-    gap: 3rem;
+.about-us-blur-box p {
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
-.about-us-content .container img{
-    width: 40%;
-    border-radius: 3rem;
-}
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .about-us-content .container {
+        padding: 1rem;
+    }
 
+    .about-us-blur-box {
+        padding: 1rem;
+        border-radius: 0.75rem;
+    }
 
-@media screen and (max-width:1024px) {
-    .about-us-content{
-        padding: 2rem;
+    .about-us-blur-box h2 {
+        font-size: 2rem;
     }
-    .about-us-content .container{
-        display:block;
-    }
-    .about-us-content .container img{
-        width: 100%;
-        border-radius: 1.5rem;
-    }
-    .about-us-content p{  
-        margin-top: 2rem;
+
+    .about-us-blur-box p {
+        margin-top: 1rem;
     }
 }
